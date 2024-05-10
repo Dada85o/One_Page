@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+  }
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Plynulé posouvání při kliknutí na odkazy */
+}
+ 
+
+ 
+section {
+    padding: 50px;
+    text-align: center;
+    height: 100vh; /* Každá sekce zabírá celou viditelnou oblast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: transform 0.5s ease-in-out; /* Animace přechodu mezi sekcemi */
+}
+ 
+/* Barvy sekcí */
+#section1 {
+    background-color: #d42013; /* Červená */
+    color: #fff;
+}
+ 
+#section2 {
+    background-color: #3810ee; /* Modrá */
+    color: #fff;
+}
+ 
+#section3 {
+    background-color: #107c13; /* Zelená */
+    color: #fff;
+}
+ 
+/* Nastavení posunu při aktivním anchor odkazu */
+section:target, section:hover {
+    transform: translateX(0%);
+}
